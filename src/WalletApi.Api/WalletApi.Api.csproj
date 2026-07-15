@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>WalletApi.Api</RootNamespace>
+    <InvariantGlobalization>true</InvariantGlobalization>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="7.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WalletApi.Domain\WalletApi.Domain.csproj" />
+    <ProjectReference Include="..\WalletApi.Application\WalletApi.Application.csproj" />
+    <ProjectReference Include="..\WalletApi.Infrastructure\WalletApi.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
